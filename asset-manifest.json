@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/VALUER-PORTFOLIO/static/css/main.170328fc.css",
-    "main.js": "/VALUER-PORTFOLIO/static/js/main.488092d9.js",
+    "main.js": "/VALUER-PORTFOLIO/static/js/main.16d039df.js",
     "index.html": "/VALUER-PORTFOLIO/index.html",
     "main.170328fc.css.map": "/VALUER-PORTFOLIO/static/css/main.170328fc.css.map",
-    "main.488092d9.js.map": "/VALUER-PORTFOLIO/static/js/main.488092d9.js.map"
+    "main.16d039df.js.map": "/VALUER-PORTFOLIO/static/js/main.16d039df.js.map"
   },
   "entrypoints": [
     "static/css/main.170328fc.css",
-    "static/js/main.488092d9.js"
+    "static/js/main.16d039df.js"
   ]
 }
