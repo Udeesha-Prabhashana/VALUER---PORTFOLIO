@@ -4,7 +4,10 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="hero-background">
-        <img src="/images/hero-bg.png" alt="Tropical landscape" />
+         <img
+                src="https://alshirawirealestate.com/wp-content/uploads/2023/07/Properties-Valuation.jpg"
+                alt="Tropical landscape"
+              />
         <div className="hero-overlay"></div>
       </div>
       <div className="hero-content">
