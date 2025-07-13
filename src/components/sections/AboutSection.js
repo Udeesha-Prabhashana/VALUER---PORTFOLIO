@@ -15,13 +15,12 @@ const AboutSection = () => {
           </div>
 
           <div className="about-details">
-          <div className="profile-image">
-            <img
-              src="/images/Sunil gangodawilage.png"
-              alt="Mr. Sunil Gangodawilage"
-            />
-          </div>
-
+            <div className="profile-image">
+              <img
+                src="https://res.cloudinary.com/dromuhnud/image/upload/v1752442211/Sunil_gangodawilage_ay01ph.png"
+                alt="Mr. Sunil Gangodawilage"
+              />
+            </div>
 
             <div className="profile-info">
               <h3>Mr. Sunil Gangodawilage (B.Sc, AIV.)</h3>
