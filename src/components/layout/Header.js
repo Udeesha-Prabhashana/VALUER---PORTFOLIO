@@ -20,23 +20,24 @@ const Header = () => {
     <header className="header">
       {/* Social Media Bar */}
       <div className="social-bar">
-        <div className="container">
-          <div className="social-links">
-            <a href="/" className="social-link facebook">
-              📘
-            </a>
-            <a href="/" className="social-link linkedin">
-              💼
-            </a>
-            <a href="/" className="social-link phone">
-              📞
-            </a>
-            <a href="/" className="social-link whatsapp">
-              💬
-            </a>
-          </div>
-        </div>
-      </div>
+  <div className="container">
+    <div className="social-links">
+      <Link to="/" className="social-link facebook">
+        📘
+      </Link>
+      <Link to="/" className="social-link linkedin">
+        💼
+      </Link>
+      <Link to="/" className="social-link phone">
+        📞
+      </Link>
+      <Link to="/" className="social-link whatsapp">
+        💬
+      </Link>
+    </div>
+  </div>
+</div>
+
 
       {/* Main Navigation */}
       <nav className="navbar">

@@ -15,15 +15,16 @@ const AboutSection = () => {
           </div>
 
           <div className="about-details">
-            <div className="profile-image">
-              <img
-                src="https://via.placeholder.com/300x350/cccccc/666666?text=Profile+Photo"
-                alt="Vlr. W.G. NISHANTHA"
-              />
-            </div>
+          <div className="profile-image">
+            <img
+              src="/images/Sunil gangodawilage.png"
+              alt="Mr. Sunil Gangodawilage"
+            />
+          </div>
+
 
             <div className="profile-info">
-              <h3>Vlr. W.G. NISHANTHA (B.Sc, AIV.)</h3>
+              <h3>Mr. Sunil Gangodawilage (B.Sc, AIV.)</h3>
               <div className="qualifications">
                 <p>B.Sc. Estate Management & Valuation (Special), USJP Sri Lanka</p>
                 <p>Professional Associate Member of Institute of Valuers of Sri Lanka</p>
