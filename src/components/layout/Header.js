@@ -22,16 +22,16 @@ const Header = () => {
       <div className="social-bar">
         <div className="container">
           <div className="social-links">
-            <a href="#" className="social-link facebook">
+            <a href="/" className="social-link facebook">
               📘
             </a>
-            <a href="#" className="social-link linkedin">
+            <a href="/" className="social-link linkedin">
               💼
             </a>
-            <a href="#" className="social-link phone">
+            <a href="/" className="social-link phone">
               📞
             </a>
-            <a href="#" className="social-link whatsapp">
+            <a href="/" className="social-link whatsapp">
               💬
             </a>
           </div>

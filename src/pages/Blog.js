@@ -43,7 +43,7 @@ const Blog = () => {
                 <div className="blog-date">{new Date(post.date).toLocaleDateString()}</div>
                 <h3>{post.title}</h3>
                 <p>{post.excerpt}</p>
-                <a href="#" className="read-more">
+                <a href="/" className="read-more">
                   Read More →
                 </a>
               </div>
