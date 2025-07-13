@@ -1,7 +1,27 @@
-import type React from "react"
-import "./RegisteredValuerSection.css"
+import type React from "react";
+import "./RegisteredValuerSection.css";
+
+interface RelatedLink {
+  name: string;
+  url: string;
+}
 
 const RegisteredValuerSection: React.FC = () => {
+  const relatedLinks: RelatedLink[] = [
+    {
+      name: "Government Valuation Department",
+      url: "https://www.gov.lk/valuation-department" // Replace with actual URL
+    },
+    {
+      name: "University College Of Estate Management",
+      url: "https://www.ucem.ac.uk/" // Replace with actual URL
+    },
+    {
+      name: "Institute of Valuers of Sri Lanka",
+      url: "https://ivsl.lk/" // Replace with actual URL
+    }
+  ];
+
   return (
     <section className="registered-valuer-section">
       <div className="container">
@@ -38,15 +58,18 @@ const RegisteredValuerSection: React.FC = () => {
         <div className="related-links">
           <h3>Related Links</h3>
           <ul>
-            <li>
-              <a href="#">1. Government Valuation Department</a>
-            </li>
-            <li>
-              <a href="#">2. University College Of Estate Management</a>
-            </li>
-            <li>
-              <a href="#">3. Institute of Valuers of Sri Lanka</a>
-            </li>
+            {relatedLinks.map((link, index) => (
+              <li key={index}>
+                <a 
+                  href={link.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label={`Visit ${link.name}`}
+                >
+                  {index + 1}. {link.name}
+                </a>
+              </li>
+            ))}
           </ul>
 
           <div className="quote-button">
@@ -55,7 +78,7 @@ const RegisteredValuerSection: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default RegisteredValuerSection
+export default RegisteredValuerSection;

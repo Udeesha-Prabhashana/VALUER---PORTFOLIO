@@ -1,6 +1,22 @@
-import "./RegisteredValuerSection.css"
+import "./RegisteredValuerSection.css";
 
 const RegisteredValuerSection = () => {
+  // These would ideally come from a config file or API
+  const relatedLinks = [
+    {
+      name: "Government Valuation Department",
+      url: "https://www.gov.lk/valuation-department" // Replace with actual URL
+    },
+    {
+      name: "University College Of Estate Management",
+      url: "https://www.ucem.ac.uk/" // Replace with actual URL
+    },
+    {
+      name: "Institute of Valuers of Sri Lanka",
+      url: "https://ivsl.lk/" // Replace with actual URL
+    }
+  ];
+
   return (
     <section className="registered-valuer-section">
       <div className="container">
@@ -37,15 +53,17 @@ const RegisteredValuerSection = () => {
         <div className="related-links">
           <h3>Related Links</h3>
           <ul>
-            <li>
-              <a href="#">1. Government Valuation Department</a>
-            </li>
-            <li>
-              <a href="#">2. University College Of Estate Management</a>
-            </li>
-            <li>
-              <a href="#">3. Institute of Valuers of Sri Lanka</a>
-            </li>
+            {relatedLinks.map((link, index) => (
+              <li key={index}>
+                <a 
+                  href={link.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  {index + 1}. {link.name}
+                </a>
+              </li>
+            ))}
           </ul>
 
           <div className="quote-button">
@@ -54,7 +72,7 @@ const RegisteredValuerSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default RegisteredValuerSection
+export default RegisteredValuerSection;
