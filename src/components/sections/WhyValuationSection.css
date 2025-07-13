@@ -1,0 +1,93 @@
+.why-valuation-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.left-content h2 {
+  font-size: 2rem;
+  color: #5bc0de;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.flowchart {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.flowchart img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.explanation p {
+  color: #2c5aa0;
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.right-content h2 {
+  font-size: 2rem;
+  color: #5bc0de;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.right-content h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.reasons-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reasons-list li {
+  color: #8b0000;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+  font-weight: 500;
+}
+
+.reasons-list li::before {
+  content: "•";
+  color: #8b0000;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .section-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .left-content h2,
+  .right-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .right-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .reasons-list li {
+    font-size: 1rem;
+  }
+}
